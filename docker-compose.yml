@@ -1,0 +1,9 @@
+﻿services:
+  customer-api:
+    image: customer-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"  # Mapear el puerto 80 del contenedor al puerto 8080 del host
+      - "443:443"  # Mapear el puerto 443 del contenedor al puerto 443 del host
